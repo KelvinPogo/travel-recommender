@@ -1,0 +1,83 @@
+/* 1. Reset weird browser defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgba(26, 26, 26, 0.9); /* Dark with slight transparency */
+  display: flex;
+  justify-content: space-between; /* Spreads items across the bar */
+  align-items: center; /* Vertically centers everything */
+  padding: 15px 40px;
+  gap: 20px; /* Space between major sections */
+}
+
+.search-container {
+  display: flex;
+  gap: 10px; /* Space between input and buttons */
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  width: 250px;
+  font-size: 14px;
+}
+
+.search-container button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #00a0a0;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #008080;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00a0a0;
+}
+
+/* 3. Temporary visual guide (remove later) */
+.debug {
+  outline: 1px solid red;
+}
